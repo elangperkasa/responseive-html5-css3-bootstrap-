@@ -1,0 +1,539 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<title>Anything about Erwin Kurnia - My Journey</title>
+<style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+ 
+  background-color: #474e5d; 
+    background-image: url("img/bwe.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+
+}
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;z-index: 399;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 200px;
+  }
+  
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+	z-index: 399;
+	
+    top: 200px;
+  }
+ 
+ 
+
+
+}
+
+#myModal {top:200px;}
+ .kotak
+  {width:100%;
+	  }
+	  
+.glow {
+  font-size: 30px;
+  color: #fff;
+  text-align: right;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+    position: absolute;
+  top: 10px;
+  right: 50px;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+#myTopnav {
+  background-color: #000000;
+  padding: 10px 10px;
+  color: black;
+  text-align: center;
+  font-size: 20px; 
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: 0.2s;
+  font-family: Arial;
+  z-index: 299;
+}
+
+</style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 4200px;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: -30;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  top:90px;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 95px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: -30%;
+}
+
+/* Place the container to the right */
+.right {
+  left: 	30%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 98px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 99px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -10px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 1500px) {
+ .timeline {
+ 
+  height: 4600px;
+}	
+}
+
+@media screen and (max-width: 900px) {
+ .timeline {
+ 
+  height: 4600px;
+}	
+}
+@media screen and (max-width: 800px) {
+ .timeline {
+ 
+  height: 5000px;
+}	
+}
+@media screen and (max-width: 700px) {
+ .timeline {
+ 
+  height: 6500px;
+}	
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+ 
+ .text-block {
+ left : 0px;
+  right: 0px;
+  width:100%;
+}
+
+ .timeline {
+ 
+  height: 6000px;
+}
+
+  /* Place the timelime to the left */
+  .timeline::after {
+  left: 50px;
+  
+  }
+  
+  
+  
+  /* Full-width containers */
+  .container {
+  width: 100%;
+  padding-left: 110px;
+  padding-right: 25px;
+  
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+  left: 100px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+  left: 50px;
+  top:100px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+  left: 5%;
+  }
+  
+   .left {
+  left: 5%;
+  }
+}
+
+.text-block {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  width:100%;
+  text-align:center;
+  background-color: black;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  
+  opacity: 1;
+  
+  z-index: 99;
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+<p class="glow">Erwin Kurnia</p>
+  <a  href="index.html">Home</a>
+  <a class="active" href="journey.html">My Journey</a>
+  <a href="#about" data-toggle="modal" data-target="#myModal">How to Contact Me?</a>
+  <a href="javascript:void(0);" class="icon" onClick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div class="kotak">
+<div class="timeline">
+<div class="container left">
+    <div class="content">
+      <h2>1990</h2>
+      <p>&hearts;&nbsp;Got my first computer with XT processor when I'm study at Senior High School.</p>      
+      <p>&hearts;&nbsp;Making my first application with BASIC programming language.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1992</h2>
+      <p></p>
+      <p>&hearts;&nbsp;Developing my own word processor apps, using clipper.</p>
+      
+      <p>&hearts;&nbsp;Making my first website with Notepad..</p>
+      
+    </div>
+  </div>
+  
+ <div class="container left">
+    <div class="content">
+      <h2>1995</h2>
+      <p>Graduate from Gunadarma College.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1996</h2>
+      <p>Working as programmer in Branta Mulia.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1997</h2>
+      <p>Work at Dompet Dhuafa as programmer.</p>
+      <p>&hearts;&nbsp;Creating company website.</p>
+      <p>&hearts;&nbsp;Making Qurban Meat Distribution applicaton for national wide.</p>
+      
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>1998</h2>
+      <p>Working in ISAI and developing website for company news agency called 68H.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>1999</h2>
+      <p>Win and Me Production is establish.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2000</h2>
+      <p>Win and Me Production, create a match maker website called cinta-putih.com.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2001</h2>
+      <p>cinta-putih.com get an award for the best updated website from INFOKOMPUTER Indonesia computer magazine.</p>
+    </div>
+  </div>
+   <div class="container right">
+    <div class="content">
+      <h2>2002</h2>
+      <p>Making e-commerce website B2B for Modern Photo.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2003</h2>
+      <p>Get my CEH Certificate</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2004</h2>
+      <p>Developing Tourism Portal for Indonesia government (DEPBUDPAR).</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2005</h2>
+      <p>&hearts;&nbsp;Creating E-Tendering web application for Indonesia Government (KOMINFO).</p>
+      <p>&hearts;&nbsp;Joining the ASIA Software competition at HONGKONG.</p>
+      
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2006</h2>
+      <p>Win and Me Production get a new contract with BMW Indonesia to make GUI for counting down their new vehicle product.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2007</h2>
+      <p>Win and Me Production make a touchscreen information application for BMW Indonesia in their front desk</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2010</h2>
+      <p>Work as IT Manager - Dept Head at UFINANCE Indonesia.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2011</h2>      
+      <p>Work at Bali as IT Manager for HIS.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2012</h2>
+      <p>Work as Technical IT Project Manager for Sofialys.</p>
+    </div>
+  </div>
+    <div class="container left">
+    <div class="content">
+      <h2>2013</h2>
+      <p>Work in Qatar as IT Specialist for Chiyoda Almana.</p>
+      <p>&hearts;&nbsp;Developing mobile apps for wheater warning system.</p>
+      <p>&hearts;&nbsp;Developing Asset Management system.</p>
+      
+    </div>
+  </div>
+     <div class="container right">
+    <div class="content">
+      <h2>2015</h2>
+      <p>&hearts;&nbsp;Making a blog and youtube channel for tutorial software development.</p>
+      <p>&hearts;&nbsp;Making NGO called ENTASKAN for helping people in needed to get back on their feet - giving a free bussiness lesson</p>
+      
+      <p>&hearts;&nbsp;Make a Social Action called TEKO TUA (Teknologi untuk semua/Technology for everybody)- free computer programming lesson for young people who can't affort to get an education</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2016</h2>
+      <p>Making HR Recruitment system for Sinarmas.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <div class="content">
+      <h2>2017</h2>
+      <p>Founded PT.WINIT, works as CTO.</p>
+    </div>
+  </div>
+  <div class="container left">
+    <div class="content">
+      <h2>2018</h2>
+      <p>Developing Mobile Digital Map Application for government institution (BPN)</p>
+    </div>
+  </div>
+   <div class="text-block">
+    <p>He who fights with monsters should be careful lest he thereby become a monster. And if thou gaze long into an abyss, the abyss will also gaze into thee.</p>
+  </div>
+</div>
+
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+<!-- The Modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">How to contact me ?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+         Simply contact me using one of this :<br>
+         <br><i class="fa fa-whatsapp" style="font-size:24px;color:green"></i> (+62) 81808024343 <br><i class="fa fa-envelope" style="font-size:24px;color:black"></i> erwin.kurnia@gmail.com
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
